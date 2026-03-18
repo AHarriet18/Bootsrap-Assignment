@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- css -->
+     <style>
+        /* make carousel full screen */
+        #home .carousel-item{
+            height:100vh;
+        }
+        #home .carousel-item img{
+            height:100vh;
+            object-fit: cover;
+        }
+        /* Dark Overlay */
+        .overlay{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1;
+        }
+        /* Hero text */
+        .hero-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 2;
+        }
+        /* text */
+        .carousel-caption{
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            bottom: unset;
+            text-align: center;
+            width: 100%;
+        }
+        .navbar{
+            position: relative;
+            z-index:1000;
+        }
+     </style>
+</head>
+<!-- the scroll spy is applied in the body tag -->
+<body data-bs-spy="scroll" data-bs-target="#navbarmenu" data-bs-offset="70">
+    <!-- navigation bar -->
+     <nav id="navbarmenu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="bavbar-brand" href="#">Creative Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- links -->
+             <div class="collapse navbar-collpase" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-itam">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                     <li class="nav-itam">
+                        <a class="nav-link active" href="#about">About US</a>
+                    </li>
+                     <li class="nav-itam">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                     <li class="nav-itam">
+                        <a class="nav-link active" href="#portfolio">Portfolio</a>
+                    </li>
+                     <li class="nav-itam">
+                        <a class="nav-link active" href="#team">Team</a>
+                    </li>
+                     <li class="nav-itam">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+     </nav>
+     <!-- Hero Section -->
+      <section id="home">
+
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<!-- ================= SLIDE 1 ================= -->
+<div class="carousel-item active position-relative">
+
+<img src="./gallery/agency1.jpg" class="d-block w-100" alt="">
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- TEXT CONTENT -->
+<div class="carousel-caption">
+
+<h1 class="display-3 fw-bold">Creative Spark Agency</h1>
+<p class="lead">Igniting Ideas. Designing the Future.</p>
+<p>At Creative Spark Agency, we turn ideas into powerful digital experiences.
+Our team combines creativity, technology, and strategy to build brands that stand out in today&#39;s
+competitive digital world.
+Whether you are a startup or an established company, we help you create meaningful
+connections with your audience through modern design and innovative solutions.</p>
+
+<a href="#services" class="btn btn-primary me-3">Our Services</a>
+<a href="#contact" class="btn btn-outline-light">Contact Us</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ================= SLIDE 2 ================= -->
+<div class="carousel-item position-relative">
+
+<img src="./gallery/agency2.jpg" class="d-block w-100" alt="">
+
+<div class="overlay"></div>
+
+<div class="carousel-caption">
+
+<h1 class="display-3 fw-bold">Creative Spark Agency</h1>
+<p class="lead">Igniting Ideas. Designing the Future.</p>
+<p>At Creative Spark Agency, we turn ideas into powerful digital experiences.
+Our team combines creativity, technology, and strategy to build brands that stand out in today&#39;s
+competitive digital world.
+Whether you are a startup or an established company, we help you create meaningful
+connections with your audience through modern design and innovative solutions.</p>
+
+<a href="#services" class="btn btn-primary me-3">Our Services</a>
+<a href="#contact" class="btn btn-outline-light">Contact Us</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ================= SLIDE 3 ================= -->
+<div class="carousel-item position-relative">
+
+<img src="./gallery/agency3.jpg" class="d-block w-100" alt="">
+
+<div class="overlay"></div>
+
+<div class="carousel-caption">
+
+<h1 class="display-3 fw-bold">Creative Spark Agency</h1>
+<p class="lead">Igniting Ideas. Designing the Future.</p>
+<p>At Creative Spark Agency, we turn ideas into powerful digital experiences.
+Our team combines creativity, technology, and strategy to build brands that stand out in today&#39;s
+competitive digital world.
+Whether you are a startup or an established company, we help you create meaningful
+connections with your audience through modern design and innovative solutions.</p>
+
+<a href="#services" class="btn btn-primary me-3">Our Services</a>
+<a href="#contact" class="btn btn-outline-light">Contact Us</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+      <!--About Us section -->
+      <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">About Creative Spark</h2>
+                <p class="text-muted">Creative Spark Agency was founded with a simple goal — to help businesses grow through
+creativity and technology. What started as a small team of passionate designers and developers
+has grown into a full-service digital agency delivering innovative solutions to clients around the
+world.
+We believe that every brand has a unique story to tell. Our job is to bring that story to life
+through creative design, strategic thinking, and cutting-edge technology.</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-tittle">Our Mission</h5>
+                <p class="card-text">Our mission is to empower businesses with creative digital solutions that drive growth, improve
+customer engagement, and create lasting impact.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">Our Vision</h5>
+                <p class="card-text">Our vision is to become a leading creative digital agency known for transforming ideas into
+successful brands and digital experiences.</p>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+      </section>
+      <!-- services section -->
+       <section id="services" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">We offer a wide range of digital services designed to help businesses succeed in the online
+world. Our team combines creativity and technical expertise to deliver solutions that are both
+beautiful and functional.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Design</h5>
+                        <p class="card-text">We design modern, responsive, and user-friendly websites that help businesses build a strong
+online presence. Our websites are optimized for performance, usability, and mobile devices.</p>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Branding and Identity</h5>
+                        <p class="card-text">A strong brand identity helps businesses stand out. We create memorable logos, brand colors,
+typography, and visual identities that represent your business effectively.</p>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing</h5>
+                        <p class="card-text">Our digital marketing strategies help businesses reach the right audience through search engines,
+social media, and online advertising campaigns.</p>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">We improve your website's visibility on search engines so potential customers can easily find
+your business online.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+       </section>
+<!-- Portfolio Section -->
+ <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Recent Work</h2>
+            <p class="text-muted">Over the years, we have worked with startups, businesses, and organizations to create powerful
+digital products. Here are some of the projects we are proud of.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Website</h5>
+                        <p class="text-muted">A modern online store designed for a fashion brand to sell products globally with a smooth
+shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Corporate Website</h5>
+                        <p class="text-muted">A professional website for a consulting company that improved their online visibility and
+customer engagement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Design</h5>
+                        <p class="text-muted">A clean and intuitive mobile application interface designed for a fitness startup.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Branding Project</h5>
+                        <p class="text-muted">A complete branding package including logo, business cards, and marketing materials for a new
+restaurant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <!-- Team Section -->
+  <section id="team" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Meet Our Creative Team</h2>
+            <p class="text muted">Our team is made up of talented designers, developers, and marketers who are passionate about
+creating impactful digital solutions.</p>
+        </div>
+        <div class="row g-4">
+            <!-- first member -->
+             <div class="col-md-4">
+                <div class="card h-100 text-center shadow">
+                    <img src="./gallery/profile1.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Johnson</h5>
+                        <p class="text-muted">Creative Director</p>
+                        <p class="card-text">Sarah leads the creative vision of the agency and ensures every project reflects innovation,
+quality, and creativity.</p>
+                    </div>
+                </div>
+             </div>
+             <!-- second member -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center shadow">
+                    <img src="./gallery/profile2.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">David Williams</h5>
+                        <p class="text-muted">Lead Web Developer</p>
+                        <p class="card-text">David specializes in building responsive and high-performance websites using modern web
+technologies.</p>
+                    </div>
+                </div>
+             </div>
+             <!-- third member -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center shadow">
+                    <img src="./gallery/profile3.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily Brown</h5>
+                        <p class="text-muted">Digital Marketing Specialist</p>
+                        <p class="card-text">Emily helps businesses grow their online presence through smart marketing strategies and data-
+driven campaigns.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+  </section>
+  <!-- contact Section -->
+   <section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Get In Touch</h2>
+            <p class="text-muted">We would love to hear about your project and help bring your ideas to life. Contact us today and
+let’s build something amazing together.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-5">
+              <h4>Contact Information</h4>
+              <p>
+<strong>Email:</strong> info@creativespark.com
+</p>
+
+<p>
+<strong>Phone:</strong> +256 700 123 456
+</p>
+
+<p>
+<strong>Office Address:</strong><br>
+Creative Spark Agency Kampala,<br>
+Kampala, Uganda
+</p>
+            </div>
+            <div class="col-md-7">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-label" placeholder="Enter Your Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-label" placeholder="Enter Your Email">
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-label" placeholder="Enter message subject">
+                    </div>
+                <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </section>
+   <footer class="bg-dark text-white pt-4 pb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center" >
+                <h5>© 2026 Creative Spark Agency. All Rights Reserved.</h5>
+            </div>
+            <div class="cpl-md-4">
+                <h5>Quick Links</h5>
+
+<ul class="list-unstyled">
+
+<li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+
+<li><a href="#about" class="text-white text-decoration-none">About</a></li>
+
+<li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+
+<li><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+
+<li><a href="#team" class="text-white text-decoration-none">Team</a></li>
+
+<li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+
+</ul>
+            </div>
+           <div class="col-md-4">
+
+<h5>Follow Us</h5>
+<a href="#" class="text-white me-3">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="#" class="text-white me-3">
+<i class="bi bi-twitter"></i>
+</a>
+
+<a href="#" class="text-white me-3">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="#" class="text-white">
+<i class="bi bi-linkedin"></i>
+</a>
+
+</div> 
+        </div>
+    </div>
+   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
